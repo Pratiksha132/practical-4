@@ -1,0 +1,29 @@
+list=[]
+b=0
+while Ture:
+    data= int(input("Enter the trnastion details"))
+    if('Exit'=='data'):
+      break
+    list1.append(data.split())
+print("transaction are:")
+print(list1)
+for var in list1:
+    if(var[0]=='D'):
+        deposit(int(var[1]))
+    elif(var[0]=='W'):
+        withdraw(int(var[1]))
+        
+
+
+def deposit(num):
+    global b
+    b=b+num
+
+def withdraw(num):
+    global b
+    b=b-num
+
+
+deposit(num)
+withdraw(num)
+
